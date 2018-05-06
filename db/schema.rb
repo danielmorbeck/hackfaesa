@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20180505182724) do
     t.string "password"
     t.string "email"
     t.text "bio"
-    t.integer "vote"
+    t.integer "votes"
     t.string "compatibility"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

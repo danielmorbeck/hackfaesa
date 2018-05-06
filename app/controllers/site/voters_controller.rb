@@ -11,16 +11,15 @@ end
 def create
     @voter = Voter.new(params_voter)
     if @voter.save
-    redirect_to root_path, notice: "O eleitor (#{@voter.email}) foi cadastrado com sucesso!"
+        redirect_to root_path, notice: "O eleitor (#{@voter.email}) foi cadastrado com sucesso!"
     else
-    render :new
+        render :new
     end
 end
 
 private
-
-    def set_voter
-    @voter = Voter.find(params[:id])
+    def set_cv
+        @voter = Voter.find(params[:id])
     end
 
     def params_voter

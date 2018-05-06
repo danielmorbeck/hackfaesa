@@ -8,7 +8,7 @@ class CreateCandidates < ActiveRecord::Migration[5.1]
       t.string :password
       t.string :email
       t.text :bio
-      t.integer :vote
+      t.integer :votes
       t.string :compatibility
 
       t.timestamps

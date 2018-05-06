@@ -17,16 +17,11 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.new
   end
 
-
-  def votar
-    @candidate.vote += 1
-  end
-
   # POST /candidates
   # POST /candidates.json
   def create
     @candidate = Candidate.new(candidate_params)
-    @candidate.vote = 0
+    @candidate.votes = 0
 
     respond_to do |format|
       if @candidate.save

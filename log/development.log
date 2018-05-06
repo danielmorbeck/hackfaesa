@@ -2961,3 +2961,911 @@ Processing by Site::HomeController#index as HTML
 Completed 200 OK in 105ms (Views: 101.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:32:41 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.6ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 642ms (Views: 624.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-06 01:32:59 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (21.7ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.7ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 91ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 01:38:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:39:13 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.6ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (612.4ms)
+Completed 500 Internal Server Error in 633ms (ActiveRecord: 0.6ms)
+
+
+
+NameError - undefined local variable or method `current' for #<#<Class:0x00007fd724a361e8>:0x00007fd7223ebc90>
+Did you mean?  current_page?:
+  app/views/site/home/index.html.erb:28:in `block in _app_views_site_home_index_html_erb___1270968314681677851_70280987822560'
+  app/views/site/home/index.html.erb:19:in `_app_views_site_home_index_html_erb___1270968314681677851_70280987822560'
+
+Started POST "/__better_errors/353bde0ff57dac71/variables" for 127.0.0.1 at 2018-05-06 01:39:14 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:39:36 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+
+
+NoMethodError - undefined method `vote' for nil:NilClass:
+  app/views/site/home/index.html.erb:28:in `block in _app_views_site_home_index_html_erb___1270968314681677851_70281003845380'
+  app/views/site/home/index.html.erb:19:in `_app_views_site_home_index_html_erb___1270968314681677851_70281003845380'
+
+Started POST "/__better_errors/0d4532ea4bf6b4e5/variables" for 127.0.0.1 at 2018-05-06 01:39:36 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateVoters (20180505143136)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "voters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_voters_on_email" ON "voters" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_voters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_voters_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_voters_on_reset_password_token" ON "voters" ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505143136"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCpfAndCandidateToVoter (20180505164502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "voters" ADD "cpf" integer[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "voters" ADD "candidates" reference[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505164502"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCandidates (20180505182724)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" varchar, "political" varchar, "job" varchar, "password" varchar, "email" varchar, "bio" text, "votes" integer, "compatibility" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505182724"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-06 04:40:45.626215"], ["updated_at", "2018-05-06 04:40:45.626215"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aldo Rebelo"], ["age", "62"], ["political", "Solidariedade"], ["job", "Secretaria do Governo"], ["password", "1234567890"], ["email", "aldorebelo@gmail.com"], ["created_at", "2018-05-06 04:40:45.686041"], ["updated_at", "2018-05-06 04:40:45.686041"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Álvaro Dias"], ["age", "73"], ["political", "Podemos"], ["job", "Senador representando Parana"], ["password", "1234567890"], ["email", "alvarodias@gmail.com"], ["created_at", "2018-05-06 04:40:45.692168"], ["updated_at", "2018-05-06 04:40:45.692168"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ciro Gomes"], ["age", "60"], ["political", "PDT"], ["job", "Vice-presidente do PDT"], ["password", "1234567890"], ["email", "cirogomes@gmail.com"], ["created_at", "2018-05-06 04:40:45.696720"], ["updated_at", "2018-05-06 04:40:45.696720"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fernando Collor de Mello"], ["age", "68"], ["political", "PTC"], ["job", "Senador representando Alagoas"], ["password", "1234567890"], ["email", "fernandinhocollor@gmail.com"], ["created_at", "2018-05-06 04:40:45.700539"], ["updated_at", "2018-05-06 04:40:45.700539"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Geraldo Alckmin"], ["age", "65"], ["political", "PSDB"], ["job", "Presidência do PSDB"], ["password", "1234567890"], ["email", "geraldoalckmin@gmail.com"], ["created_at", "2018-05-06 04:40:45.706206"], ["updated_at", "2018-05-06 04:40:45.706206"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Guilherme Boulos"], ["age", "36"], ["political", "PSOL"], ["job", "Lider do MST"], ["password", "1234567890"], ["email", "guilhermeboulos@gmail.com"], ["created_at", "2018-05-06 04:40:45.711043"], ["updated_at", "2018-05-06 04:40:45.711043"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jair Bolsonaro"], ["age", "63"], ["political", "PSL"], ["job", "Deputado Federal"], ["password", "1234567890"], ["email", "jairbolsonarob@gmail.com"], ["created_at", "2018-05-06 04:40:45.715148"], ["updated_at", "2018-05-06 04:40:45.715148"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joaquim Barbosa"], ["age", "63"], ["political", "PSB"], ["job", "Ex-presidente do Supremo Tribunal Federal"], ["password", "1234567890"], ["email", "joaquimbarbosa@gmail.com"], ["created_at", "2018-05-06 04:40:45.718519"], ["updated_at", "2018-05-06 04:40:45.718519"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lula"], ["age", "72"], ["political", "PT"], ["job", "Sem cargo politico atual"], ["password", "1234567890"], ["email", "lula@gmail.com"], ["created_at", "2018-05-06 04:40:45.722549"], ["updated_at", "2018-05-06 04:40:45.722549"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marina Silva"], ["age", "60"], ["political", "Rede"], ["job", "Lider do REDE"], ["password", "1234567890"], ["email", "marinasilva@gmail.com"], ["created_at", "2018-05-06 04:40:45.725645"], ["updated_at", "2018-05-06 04:40:45.725645"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manuela D'Ávila"], ["age", "36"], ["political", "PCdoB"], ["job", "Deputada estadual no Rio Grande do Sul "], ["password", "1234567890"], ["email", "manueladavila@gmail.com"], ["created_at", "2018-05-06 04:40:45.729650"], ["updated_at", "2018-05-06 04:40:45.729650"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michel Temer"], ["age", "77"], ["political", "MDB"], ["job", "Presidente do Brasil"], ["password", "1234567890"], ["email", "micheltemer@gmail.com"], ["created_at", "2018-05-06 04:40:45.732914"], ["updated_at", "2018-05-06 04:40:45.732914"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paulo Rabello de Castro"], ["age", "69"], ["political", "PSC"], ["job", "Presidente do BNDES"], ["password", "1234567890"], ["email", "paulorabello@gmail.com"], ["created_at", "2018-05-06 04:40:45.736724"], ["updated_at", "2018-05-06 04:40:45.736724"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Maia"], ["age", "47"], ["political", "DEM"], ["job", "Presidente Câmara dos deputados"], ["password", "1234567890"], ["email", "rodrigomaia@gmail.com"], ["created_at", "2018-05-06 04:40:45.739839"], ["updated_at", "2018-05-06 04:40:45.739839"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:41:01 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.8ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (54.1ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.7ms)
+
+
+
+NoMethodError - undefined method `vote' for nil:NilClass:
+  app/views/site/home/index.html.erb:28:in `block in _app_views_site_home_index_html_erb___4280636273211631948_70360858060000'
+  app/views/site/home/index.html.erb:19:in `_app_views_site_home_index_html_erb___4280636273211631948_70360858060000'
+
+Started POST "/__better_errors/810b660fa442230e/variables" for 127.0.0.1 at 2018-05-06 01:41:02 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:41:45 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.9ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (41.9ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 2.9ms)
+
+
+
+NoMethodError - undefined method `vote' for nil:NilClass:
+  app/views/site/home/index.html.erb:28:in `block in _app_views_site_home_index_html_erb___4280636273211631948_70360870512820'
+  app/views/site/home/index.html.erb:19:in `_app_views_site_home_index_html_erb___4280636273211631948_70360870512820'
+
+Started POST "/__better_errors/9ff23b44929e2336/variables" for 127.0.0.1 at 2018-05-06 01:41:45 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:43:19 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.3ms)
+
+
+
+NoMethodError - undefined method `vote' for nil:NilClass:
+  app/views/site/home/index.html.erb:28:in `block in _app_views_site_home_index_html_erb___4280636273211631948_70360863981520'
+  app/views/site/home/index.html.erb:19:in `_app_views_site_home_index_html_erb___4280636273211631948_70360863981520'
+
+Started POST "/__better_errors/9daa4fc0b2a1fabf/variables" for 127.0.0.1 at 2018-05-06 01:43:19 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:45:49 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 407ms (Views: 402.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/?class=btn+btn-success&method=vote" for 127.0.0.1 at 2018-05-06 01:45:52 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:46:20 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.9ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 130ms (Views: 124.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:47:27 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 146ms (Views: 139.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/?class=btn+btn-success&method=vote" for 127.0.0.1 at 2018-05-06 01:47:31 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-06 01:48:16 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/?method=vote" for 127.0.0.1 at 2018-05-06 01:48:17 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-06 02:02:05 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (23.4ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 76ms (Views: 62.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:03:11 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 232ms (Views: 223.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:05:06 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 170ms (Views: 163.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:07:56 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 165ms (Views: 158.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:08:46 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 123ms (Views: 119.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-06 02:16:12 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (8.6ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 53ms (Views: 40.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:16:19 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 147ms (Views: 139.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:16:47 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 127ms (Views: 123.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:16:53 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 124ms (Views: 119.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:16:56 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 136ms (Views: 131.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:17:57 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 152ms (Views: 145.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:18:19 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 122ms (Views: 117.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:23:09 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (1.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 210ms (Views: 195.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:23:11 -0300
+Processing by Site::VotersController#vote as HTML
+  [1m[36mVoter Load (0.4ms)[0m  [1m[34mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 40ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Voter with 'id'=:
+  app/controllers/site/voters_controller.rb:33:in `set_cv'
+  app/controllers/site/voters_controller.rb:12:in `vote'
+
+Started POST "/__better_errors/43b36a052b9a7031/variables" for 127.0.0.1 at 2018-05-06 02:23:11 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:23:43 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  Rendered site/home/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..."Home", vote_path current_voter candidate, class:"btn btn-su...
+...                  ^~~~~~~~~~~~~:
+  app/views/site/home/index.html.erb:28:in `'
+
+Started POST "/__better_errors/a96f06796ab55a75/variables" for 127.0.0.1 at 2018-05-06 02:23:43 -0300
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:25:08 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 116ms (Views: 112.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:25:09 -0300
+Processing by Site::VotersController#vote as HTML
+  [1m[36mVoter Load (0.2ms)[0m  [1m[34mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Voter with 'id'=:
+  app/controllers/site/voters_controller.rb:33:in `set_cv'
+  app/controllers/site/voters_controller.rb:12:in `vote'
+
+Started POST "/__better_errors/a745ef1a9567bc38/variables" for 127.0.0.1 at 2018-05-06 02:25:09 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:25:30 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 120ms (Views: 114.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:25:36 -0300
+Processing by Site::VotersController#vote as HTML
+  [1m[36mVoter Load (0.2ms)[0m  [1m[34mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Voter with 'id'=:
+  app/controllers/site/voters_controller.rb:33:in `set_cv'
+  app/controllers/site/voters_controller.rb:12:in `vote'
+
+Started POST "/__better_errors/8d7bfd8d35c97a7f/variables" for 127.0.0.1 at 2018-05-06 02:25:36 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:27:31 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 152ms (Views: 145.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:27:35 -0300
+Processing by Site::VotersController#vote as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 2):
+  app/controllers/site/voters_controller.rb:11:in `vote'
+
+Started POST "/__better_errors/9c2c742d89d800ad/variables" for 127.0.0.1 at 2018-05-06 02:27:35 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:33:34 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 171ms (Views: 164.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:33:38 -0300
+Processing by Site::VotersController#vote as HTML
+  [1m[36mVoter Load (0.2ms)[0m  [1m[34mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 10ms (ActiveRecord: 2.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Voter with 'id'=:
+  app/controllers/site/voters_controller.rb:33:in `set_cv'
+  app/controllers/site/voters_controller.rb:12:in `vote'
+
+Started POST "/__better_errors/95e43812d9403033/variables" for 127.0.0.1 at 2018-05-06 02:33:38 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:34:12 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 213ms (Views: 207.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:34:15 -0300
+Processing by Site::VotersController#vote as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `candidates' for nil:NilClass:
+  app/controllers/site/voters_controller.rb:12:in `vote'
+
+Started POST "/__better_errors/48b171e61889c529/variables" for 127.0.0.1 at 2018-05-06 02:34:15 -0300
+Started GET "/vote/1" for 127.0.0.1 at 2018-05-06 02:42:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/vote/1"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:42:55 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 142ms (Views: 135.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:42:58 -0300
+Processing by Site::VotersController#vote as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `candidates' for nil:NilClass:
+  app/controllers/site/voters_controller.rb:12:in `vote'
+
+Started POST "/__better_errors/ad6f78e3e9bdf8d4/variables" for 127.0.0.1 at 2018-05-06 02:42:58 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:43:34 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 135ms (Views: 129.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:43:39 -0300
+Processing by Site::VotersController#vote as HTML
+  [1m[36mVoter Load (0.5ms)[0m  [1m[34mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 1.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Voter with 'id'=:
+  app/controllers/site/voters_controller.rb:33:in `set_cv'
+  app/controllers/site/voters_controller.rb:12:in `vote'
+
+Started POST "/__better_errors/659df73b80e6394d/variables" for 127.0.0.1 at 2018-05-06 02:43:39 -0300
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-06 02:45:47 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (8.9ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 58ms (Views: 42.9ms)
+
+
+Started GET "/vote" for 127.0.0.1 at 2018-05-06 02:48:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/vote"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:56:07 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.6ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 213ms (Views: 200.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:56:11 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 172ms (Views: 167.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 02:57:00 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 151ms (Views: 145.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 03:00:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/site/quiz" for 127.0.0.1 at 2018-05-06 03:02:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/site/quiz"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-06 03:02:49 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (13.9ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 58ms (Views: 46.8ms)
+
+
+Started GET "/site/quiz" for 127.0.0.1 at 2018-05-06 03:03:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/site/quiz"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-06 03:03:34 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (16.0ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 60ms (Views: 51.1ms)
+
+
+Started GET "/site/home/quiz" for 127.0.0.1 at 2018-05-06 03:04:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/site/home/quiz"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/site/home/quiz" for 127.0.0.1 at 2018-05-06 03:05:04 -0300
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Site::HomeController:
+
+Started POST "/__better_errors/11a94ed2a4e1943e/variables" for 127.0.0.1 at 2018-05-06 03:05:04 -0300
+Started GET "/site/home/quiz" for 127.0.0.1 at 2018-05-06 03:06:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/site/home/quiz"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/site/home/quiz" for 127.0.0.1 at 2018-05-06 03:08:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/site/home/quiz"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 03:08:39 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 136ms (Views: 131.8ms)
+
+

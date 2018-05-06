@@ -25,6 +25,7 @@
                 <span class="text-muted"><%= candidate.political %></span>
                 <span class="text-muted">-</span><br>
                 <span class="text-muted"><%= candidate.job %></span>
+                <%= link_to "Votar", root_path, class:"btn btn-success" %>
             </h2>
             <% pull_left = false %>
 
@@ -36,9 +37,8 @@
             <span class="text-muted"><%= candidate.political %></span>
             <span class="text-muted">-</span><br>
             <span class="text-muted"><%= candidate.job %></span>
+            <%= link_to "Votar", root_path, class:"btn btn-success" %>
           </h2>
-          <p class="lead"><%= candidate.bio %></p>
-          
           <% pull_left = true %>
         </div>
       <% end %>

@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   namespace :site do
     resources :voters, except: [:show, :edit, :destroy]
   end
+
+  get 'quiz', to: 'site/home#quiz'
+      
     # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
