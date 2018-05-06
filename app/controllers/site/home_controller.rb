@@ -6,4 +6,7 @@ class Site::HomeController < ApplicationController
 
     def quiz
     end
+
+    def compatibilidade
+    end
 end

@@ -4997,3 +4997,204 @@ Completed 200 OK in 125ms (Views: 120.3ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateVoters (20180505143136)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "voters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_voters_on_email" ON "voters" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_voters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_voters_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_voters_on_reset_password_token" ON "voters" ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505143136"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCpfAndCandidateToVoter (20180505164502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "voters" ADD "cpf" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "voters" ADD "candidates" reference[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505164502"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCandidates (20180505182724)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" varchar, "political" varchar, "job" varchar, "password" varchar, "email" varchar, "bio" text, "votes" integer, "img" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505182724"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-06 07:44:17.865796"], ["updated_at", "2018-05-06 07:44:17.865796"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aldo Rebelo"], ["age", "62"], ["political", "Solidariedade"], ["job", "Secretaria do Governo"], ["password", "1234567890"], ["email", "aldorebelo@gmail.com"], ["img", "https://i.imgur.com/x9OPn6N.jpg"], ["created_at", "2018-05-06 07:44:17.922064"], ["updated_at", "2018-05-06 07:44:17.922064"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Álvaro Dias"], ["age", "73"], ["political", "Podemos"], ["job", "Senador do Parana"], ["password", "1234567890"], ["email", "alvarodias@gmail.com"], ["img", "https://i.imgur.com/YRJ1SFu.jpg"], ["created_at", "2018-05-06 07:44:17.927255"], ["updated_at", "2018-05-06 07:44:17.927255"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ciro Gomes"], ["age", "60"], ["political", "PDT"], ["job", "Vice-presidente do PDT"], ["password", "1234567890"], ["email", "cirogomes@gmail.com"], ["img", "https://i.imgur.com/TmkVEN2.jpg"], ["created_at", "2018-05-06 07:44:17.930536"], ["updated_at", "2018-05-06 07:44:17.930536"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fernando Collor de Mello"], ["age", "68"], ["political", "PTC"], ["job", "Senador de Alagoas"], ["password", "1234567890"], ["email", "fernandinhocollor@gmail.com"], ["img", "https://i.imgur.com/Yfhxcu6.jpg"], ["created_at", "2018-05-06 07:44:17.933626"], ["updated_at", "2018-05-06 07:44:17.933626"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Geraldo Alckmin"], ["age", "65"], ["political", "PSDB"], ["job", "Presidência do PSDB"], ["password", "1234567890"], ["email", "geraldoalckmin@gmail.com"], ["img", "https://i.imgur.com/5G3sAvx.jpg"], ["created_at", "2018-05-06 07:44:17.937366"], ["updated_at", "2018-05-06 07:44:17.937366"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Guilherme Boulos"], ["age", "36"], ["political", "PSOL"], ["job", "Lider do MST"], ["password", "1234567890"], ["email", "guilhermeboulos@gmail.com"], ["img", "https://i.imgur.com/2ix0osI.jpg"], ["created_at", "2018-05-06 07:44:17.944574"], ["updated_at", "2018-05-06 07:44:17.944574"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Henrique Meirelles"], ["age", "72"], ["political", "MDB"], ["job", "Ministro da Fazenda"], ["password", "1234567890"], ["email", "henriquemeirelles@gmail.com"], ["img", "https://i.imgur.com/7VKz3fA.jpg"], ["created_at", "2018-05-06 07:44:17.950562"], ["updated_at", "2018-05-06 07:44:17.950562"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jair Bolsonaro"], ["age", "63"], ["political", "PSL"], ["job", "Deputado Federal do Rio de Janeiro"], ["password", "1234567890"], ["email", "jairbolsonarob@gmail.com"], ["img", "https://i.imgur.com/0Qu116J.jpg"], ["created_at", "2018-05-06 07:44:17.954995"], ["updated_at", "2018-05-06 07:44:17.954995"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joaquim Barbosa"], ["age", "63"], ["political", "PSB"], ["job", "Ex-presidente do Supremo Tribunal Federal"], ["password", "1234567890"], ["email", "joaquimbarbosa@gmail.com"], ["img", "https://i.imgur.com/AkjhiBa.jpg"], ["created_at", "2018-05-06 07:44:17.961498"], ["updated_at", "2018-05-06 07:44:17.961498"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lula"], ["age", "72"], ["political", "PT"], ["job", "Sem cargo politico atual"], ["password", "1234567890"], ["email", "lula@gmail.com"], ["img", "https://i.imgur.com/Wm9G27A.jpg"], ["created_at", "2018-05-06 07:44:17.965067"], ["updated_at", "2018-05-06 07:44:17.965067"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marina Silva"], ["age", "60"], ["political", "Rede"], ["job", "Lider do REDE"], ["password", "1234567890"], ["email", "marinasilva@gmail.com"], ["img", "https://i.imgur.com/ybj2gng.jpg"], ["created_at", "2018-05-06 07:44:17.968338"], ["updated_at", "2018-05-06 07:44:17.968338"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manuela D'Ávila"], ["age", "36"], ["political", "PCdoB"], ["job", "Deputada estadual do Rio Grande do Sul "], ["password", "1234567890"], ["email", "manueladavila@gmail.com"], ["img", "https://i.imgur.com/PfqgTHn.jpg"], ["created_at", "2018-05-06 07:44:17.971540"], ["updated_at", "2018-05-06 07:44:17.971540"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michel Temer"], ["age", "77"], ["political", "MDB"], ["job", "Presidente do Brasil"], ["password", "1234567890"], ["email", "micheltemer@gmail.com"], ["img", "https://i.imgur.com/J5W5uxd.jpg"], ["created_at", "2018-05-06 07:44:17.975624"], ["updated_at", "2018-05-06 07:44:17.975624"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paulo Rabello de Castro"], ["age", "69"], ["political", "PSC"], ["job", "Presidente do BNDES"], ["password", "1234567890"], ["email", "paulorabello@gmail.com"], ["img", "https://i.imgur.com/iACgLQ1.jpg"], ["created_at", "2018-05-06 07:44:17.978994"], ["updated_at", "2018-05-06 07:44:17.978994"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Maia"], ["age", "47"], ["political", "DEM"], ["job", "Presidente da Câmara dos deputados"], ["password", "1234567890"], ["email", "rodrigomaia@gmail.com"], ["img", "https://i.imgur.com/FZGOv7L.jpg"], ["created_at", "2018-05-06 07:44:17.982566"], ["updated_at", "2018-05-06 07:44:17.982566"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 04:44:48 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 793ms (Views: 780.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-06 04:44:56 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (9.8ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /Users/danielmorbeck/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 63ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=ca" for 127.0.0.1 at 2018-05-06 04:44:58 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"ca"}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=com" for 127.0.0.1 at 2018-05-06 04:44:59 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"com"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 04:47:17 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 135ms (Views: 132.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 04:47:54 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 133ms (Views: 128.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:47:57 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 125ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:47:58 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 139ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:47:59 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 139ms (Views: 134.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:47:59 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 139ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:47:59 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 121ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:48:00 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 118ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:49:21 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 120ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:49:22 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 124ms (Views: 119.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:49:22 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 119ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:49:23 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 125ms (Views: 120.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 04:53:26 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 138ms (Views: 132.5ms | ActiveRecord: 0.0ms)
+
+
