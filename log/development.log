@@ -2852,3 +2852,90 @@ Processing by Site::HomeController#index as HTML
 Completed 200 OK in 622ms (Views: 601.7ms | ActiveRecord: 1.5ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (143.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (274.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateVoters (20180505143136)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "voters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (44.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_voters_on_email" ON "voters" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_voters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_voters_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_voters_on_reset_password_token" ON "voters" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505143136"]]
+  [1m[35m (75.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCpfAndCandidateToVoter (20180505164502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "voters" ADD "cpf" integer[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "voters" ADD "candidates" reference[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505164502"]]
+  [1m[35m (26.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCandidates (20180505182724)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" varchar, "political" varchar, "job" varchar, "password" varchar, "email" varchar, "bio" text, "vote" integer, "compatibility" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505182724"]]
+  [1m[35m (111.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-06 04:57:23.250113"], ["updated_at", "2018-05-06 04:57:23.250113"]]
+  [1m[35m (119.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aldo Rebelo"], ["age", "62"], ["political", "Solidariedade"], ["job", "Secretaria do Governo"], ["password", "1234567890"], ["email", "aldorebelo@gmail.com"], ["compatibility", "BBAABCBBABBBA"], ["created_at", "2018-05-06 04:57:23.605153"], ["updated_at", "2018-05-06 04:57:23.605153"]]
+  [1m[35m (148.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Álvaro Dias"], ["age", "73"], ["political", "Podemos"], ["job", "Senador do Parana"], ["password", "1234567890"], ["email", "alvarodias@gmail.com"], ["compatibility", "BABBACBAABBAA"], ["created_at", "2018-05-06 04:57:23.758557"], ["updated_at", "2018-05-06 04:57:23.758557"]]
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ciro Gomes"], ["age", "60"], ["political", "PDT"], ["job", "Vice-presidente do PDT"], ["password", "1234567890"], ["email", "cirogomes@gmail.com"], ["compatibility", "ABCAAABBABBBB"], ["created_at", "2018-05-06 04:57:23.778679"], ["updated_at", "2018-05-06 04:57:23.778679"]]
+  [1m[35m (185.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fernando Collor de Mello"], ["age", "68"], ["political", "PTC"], ["job", "Senador de Alagoas"], ["password", "1234567890"], ["email", "fernandinhocollor@gmail.com"], ["compatibility", "BACBAFBBBBBBB"], ["created_at", "2018-05-06 04:57:23.968185"], ["updated_at", "2018-05-06 04:57:23.968185"]]
+  [1m[35m (39.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (11.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Geraldo Alckmin"], ["age", "65"], ["political", "PSDB"], ["job", "Presidência do PSDB"], ["password", "1234567890"], ["email", "geraldoalckmin@gmail.com"], ["compatibility", "BABBBFBAABAAB"], ["created_at", "2018-05-06 04:57:24.012518"], ["updated_at", "2018-05-06 04:57:24.012518"]]
+  [1m[35m (34.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Guilherme Boulos"], ["age", "36"], ["political", "PSOL"], ["job", "Lider do MST"], ["password", "1234567890"], ["email", "guilhermeboulos@gmail.com"], ["compatibility", "ABAAAFABBABBB"], ["created_at", "2018-05-06 04:57:24.060543"], ["updated_at", "2018-05-06 04:57:24.060543"]]
+  [1m[35m (44.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Henrique Meirelles"], ["age", "72"], ["political", "MDB"], ["job", "Ministro da Fazenda"], ["password", "1234567890"], ["email", "henriquemeirelles@gmail.com"], ["compatibility", "AACABFABABAAA"], ["created_at", "2018-05-06 04:57:24.110079"], ["updated_at", "2018-05-06 04:57:24.110079"]]
+  [1m[35m (32.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jair Bolsonaro"], ["age", "63"], ["political", "PSL"], ["job", "Deputado Federal do Rio de Janeiro"], ["password", "1234567890"], ["email", "jairbolsonarob@gmail.com"], ["compatibility", "BABBBFAAABABB"], ["created_at", "2018-05-06 04:57:24.146222"], ["updated_at", "2018-05-06 04:57:24.146222"]]
+  [1m[35m (46.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joaquim Barbosa"], ["age", "63"], ["political", "PSB"], ["job", "Ex-presidente do Supremo Tribunal Federal"], ["password", "1234567890"], ["email", "joaquimbarbosa@gmail.com"], ["compatibility", "ABCBBABBABBBB"], ["created_at", "2018-05-06 04:57:24.196492"], ["updated_at", "2018-05-06 04:57:24.196492"]]
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lula"], ["age", "72"], ["political", "PT"], ["job", "Sem cargo politico atual"], ["password", "1234567890"], ["email", "lula@gmail.com"], ["compatibility", "ABAAAFABBABBA"], ["created_at", "2018-05-06 04:57:24.215139"], ["updated_at", "2018-05-06 04:57:24.215139"]]
+  [1m[35m (18.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marina Silva"], ["age", "60"], ["political", "Rede"], ["job", "Lider do REDE"], ["password", "1234567890"], ["email", "marinasilva@gmail.com"], ["compatibility", "ABAABCBABBBBA"], ["created_at", "2018-05-06 04:57:24.240810"], ["updated_at", "2018-05-06 04:57:24.240810"]]
+  [1m[35m (34.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manuela D'Ávila"], ["age", "36"], ["political", "PCdoB"], ["job", "Deputada estadual do Rio Grande do Sul "], ["password", "1234567890"], ["email", "manueladavila@gmail.com"], ["compatibility", "ABAABFBBAABBA"], ["created_at", "2018-05-06 04:57:24.281074"], ["updated_at", "2018-05-06 04:57:24.281074"]]
+  [1m[35m (18.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michel Temer"], ["age", "77"], ["political", "MDB"], ["job", "Presidente do Brasil"], ["password", "1234567890"], ["email", "micheltemer@gmail.com"], ["compatibility", "BABBAABAABAAB"], ["created_at", "2018-05-06 04:57:24.303418"], ["updated_at", "2018-05-06 04:57:24.303418"]]
+  [1m[35m (20.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paulo Rabello de Castro"], ["age", "69"], ["political", "PSC"], ["job", "Presidente do BNDES"], ["password", "1234567890"], ["email", "paulorabello@gmail.com"], ["compatibility", "BBABAEBABBABB"], ["created_at", "2018-05-06 04:57:24.328005"], ["updated_at", "2018-05-06 04:57:24.328005"]]
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Maia"], ["age", "47"], ["political", "DEM"], ["job", "Presidente da Câmara dos deputados"], ["password", "1234567890"], ["email", "rodrigomaia@gmail.com"], ["compatibility", "BACBBFBABBAAB"], ["created_at", "2018-05-06 04:57:24.349186"], ["updated_at", "2018-05-06 04:57:24.349186"]]
+  [1m[35m (134.9ms)[0m  [1m[36mcommit transaction[0m
