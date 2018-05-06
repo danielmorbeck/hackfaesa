@@ -2939,3 +2939,131 @@ Migrating to CreateCandidates (20180505182724)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "compatibility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Maia"], ["age", "47"], ["political", "DEM"], ["job", "Presidente da Câmara dos deputados"], ["password", "1234567890"], ["email", "rodrigomaia@gmail.com"], ["compatibility", "BACBBFBABBAAB"], ["created_at", "2018-05-06 04:57:24.349186"], ["updated_at", "2018-05-06 04:57:24.349186"]]
   [1m[35m (134.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:19:01 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 21741ms (Views: 21725.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:19:30 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 247ms (Views: 202.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:19:31 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 177ms (Views: 172.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:19:33 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 167ms (Views: 160.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:19:34 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.6ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 195ms (Views: 175.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:19:38 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 167ms (Views: 142.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:30:27 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (36.8ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 1467ms (Views: 1271.2ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:30:30 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 186ms (Views: 167.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:30:32 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 178ms (Views: 173.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:30:34 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 165ms (Views: 163.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:30:45 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 128ms (Views: 121.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:33:23 +0000
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 140ms (Views: 126.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:33:50 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/quiz"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
