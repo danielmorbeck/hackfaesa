@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20180505182724) do
     t.string "email"
     t.text "bio"
     t.integer "votes"
-    t.string "compatibility"
+    t.string "img"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

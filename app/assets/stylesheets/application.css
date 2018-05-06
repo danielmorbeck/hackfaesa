@@ -26,7 +26,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    background: url('https://i.imgur.com/rus7tO6.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -34,8 +34,13 @@
 }
 
 .headline {
-    padding: 120px 0;
+    padding: 120px 0;  
 }
+
+.navbar-header{
+    color: #215BE2;
+}
+
 
 .headline h1 {
     font-size: 130px;

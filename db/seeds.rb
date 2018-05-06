@@ -15,7 +15,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Secretaria do Governo",
                         email: "aldorebelo@gmail.com",
                         password: "1234567890",
-                        compatibility: "BBAABCBBABBBA"},
+                        img: "https://i.imgur.com/x9OPn6N.jpg"},
                         
                         { name: "Álvaro Dias",
                         age: "73",
@@ -23,7 +23,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Senador do Parana",
                         email: "alvarodias@gmail.com",
                         password: "1234567890",
-                        compatibility: "BABBACBAABBAA"},
+                        img: "https://i.imgur.com/YRJ1SFu.jpg"},
                         
                         { name: "Ciro Gomes",
                         age: "60",
@@ -31,7 +31,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Vice-presidente do PDT",
                         email: "cirogomes@gmail.com",
                         password: "1234567890",
-                        compatibility: "ABCAAABBABBBB"},
+                        img: "https://i.imgur.com/TmkVEN2.jpg"},
 
                         { name: "Fernando Collor de Mello",
                         age: "68",
@@ -39,7 +39,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Senador de Alagoas",
                         email: "fernandinhocollor@gmail.com",
                         password: "1234567890",
-                        compatibility: "BACBAFBBBBBBB"},
+                        img: "https://i.imgur.com/Yfhxcu6.jpg"},
 
                         { name: "Geraldo Alckmin",
                         age: "65",
@@ -47,7 +47,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Presidência do PSDB",
                         email: "geraldoalckmin@gmail.com",
                         password: "1234567890",
-                        compatibility: "BABBBFBAABAAB"},
+                        img: "https://i.imgur.com/5G3sAvx.jpg"},
 
                         { name: "Guilherme Boulos",
                         age: "36",
@@ -55,7 +55,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Lider do MST",
                         email: "guilhermeboulos@gmail.com",
                         password: "1234567890",
-                        compatibility: "ABAAAFABBABBB"},
+                        img: "https://i.imgur.com/2ix0osI.jpg"},
 
                         { name: "Henrique Meirelles",
                         age: "72",
@@ -63,7 +63,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Ministro da Fazenda",
                         email: "henriquemeirelles@gmail.com",
                         password: "1234567890",
-                        compatibility: "AACABFABABAAA"},
+                        img: "https://i.imgur.com/7VKz3fA.jpg"},
 
                         { name: "Jair Bolsonaro",
                         age: "63",
@@ -71,7 +71,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Deputado Federal do Rio de Janeiro",
                         email: "jairbolsonarob@gmail.com",
                         password: "1234567890",
-                        compatibility: "BABBBFAAABABB"},
+                        img: "https://i.imgur.com/0Qu116J.jpg"},
 
                         { name: "Joaquim Barbosa",
                         age: "63",
@@ -79,7 +79,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Ex-presidente do Supremo Tribunal Federal",
                         email: "joaquimbarbosa@gmail.com",
                         password: "1234567890",
-                        compatibility: "ABCBBABBABBBB"}, 
+                        img: "https://i.imgur.com/AkjhiBa.jpg"}, 
                     
                         { name: "Lula",
                         age: "72",
@@ -87,7 +87,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Sem cargo politico atual",
                         email: "lula@gmail.com",
                         password: "1234567890",
-                        compatibility: "ABAAAFABBABBA"},
+                        img: "https://i.imgur.com/Wm9G27A.jpg"},
                     
                         { name: "Marina Silva",
                         age: "60",
@@ -95,7 +95,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Lider do REDE",
                         email: "marinasilva@gmail.com",
                         password: "1234567890",
-                        compatibility: "ABAABCBABBBBA"},
+                        img: "https://i.imgur.com/ybj2gng.jpg"},
                     
                         { name: "Manuela D'Ávila",
                         age: "36",
@@ -103,7 +103,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Deputada estadual do Rio Grande do Sul ",
                         email: "manueladavila@gmail.com",
                         password: "1234567890",
-                        compatibility: "ABAABFBBAABBA"},
+                        img: "https://i.imgur.com/PfqgTHn.jpg"},
                     
                         { name: "Michel Temer",
                         age: "77",
@@ -111,7 +111,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Presidente do Brasil",
                         email: "micheltemer@gmail.com",
                         password: "1234567890",
-                        compatibility: "BABBAABAABAAB"},
+                        img: "https://i.imgur.com/J5W5uxd.jpg"},
                     
                         { name: "Paulo Rabello de Castro",
                         age: "69",
@@ -119,7 +119,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Presidente do BNDES",
                         email: "paulorabello@gmail.com",
                         password: "1234567890",
-                        compatibility: "BBABAEBABBABB"},
+                        img: "https://i.imgur.com/iACgLQ1.jpg"},
                     
                         { name: "Rodrigo Maia",
                         age: "47",
@@ -127,7 +127,7 @@ puts "GERANDO CANDIDADATOS......"
                         job: "Presidente da Câmara dos deputados",
                         email: "rodrigomaia@gmail.com",
                         password: "1234567890",
-                        compatibility: "BACBBFBABBAAB"}])
+                        img: "https://i.imgur.com/FZGOv7L.jpg"}])
 
 puts "GERANDO CANDIDADATOS...... OK"
 

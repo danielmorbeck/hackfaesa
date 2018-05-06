@@ -9,7 +9,7 @@ class CreateCandidates < ActiveRecord::Migration[5.1]
       t.string :email
       t.text :bio
       t.integer :votes
-      t.string :compatibility
+      t.string :img
 
       t.timestamps
     end
