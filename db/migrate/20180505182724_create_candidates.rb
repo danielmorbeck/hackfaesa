@@ -7,7 +7,7 @@ class CreateCandidates < ActiveRecord::Migration[5.1]
       t.string :job
       t.string :password
       t.string :email
-      t.text :bio
+      t.string :bio
       t.integer :votes
       t.string :img
 

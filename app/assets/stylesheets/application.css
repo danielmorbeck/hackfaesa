@@ -34,13 +34,8 @@
 }
 
 .headline {
-    padding: 120px 0;  
+    padding: 120px 0;
 }
-
-.navbar-header{
-    color: #215BE2;
-}
-
 
 .headline h1 {
     font-size: 130px;
@@ -194,4 +189,55 @@ footer {
         margin-bottom: 10px;
         margin-left: 0;
     }
+}
+.form-group label
+{
+    color: black;
+    font-size: 30px;
+    line-height: 40px;
+
+    
+
+}
+.form-group .radio-inline
+{
+    color: black;
+    font-size: 15px;
+}
+.form-group .radio-inline:hover
+{
+    color: grey;
+    font-size: 15px;
+}
+#comp
+{
+    padding-left: 30%;
+}
+#comp img
+{
+    float: left;
+
+}
+#disc
+{
+    float: left;
+    padding-left: 30%;
+}
+#disc2
+{
+    float: left;
+    padding-left: 15%;
+}
+#content
+{
+    padding-left: 48%;
+}
+.featurette
+{
+    margin-top: 10px;
+    border-radius: 50px 20px;
+}
+.text-muted
+{
+    color: black;
 }

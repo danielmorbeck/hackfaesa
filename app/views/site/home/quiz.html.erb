@@ -1,5 +1,8 @@
 <!-- Page Content -->
 <div class="container">
+    <div class="alert alert-warning">
+        Responda as perguntas de acordo com seus pensamentos para obter um candidato compativel.
+    </div>
     <div class="form-group">
         <label>Sobre a Reforma Agrária</label>
         <label class="radio-inline">
@@ -171,7 +174,7 @@
         <input type="radio" name="13" id="C" value="option3">Não tenho Opinião
     </label>
     </div>
-
+    <%= link_to "Calcular Compatibilidade", compatibilidade_path, class:"btn btn-success btn-lg" %>
 
     <!-- Footer -->
     <footer>

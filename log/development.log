@@ -5198,3 +5198,1645 @@ Processing by Site::HomeController#quiz as HTML
 Completed 200 OK in 138ms (Views: 132.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:06:53 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:09:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/intencao"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:10:10 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 690ms (Views: 687.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:11:15 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (1.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 240ms (Views: 232.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 05:11:24 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `vote' for #<Candidate:0x00007fd92d140fb0>
+Did you mean?  votes:
+  app/views/candidates/show.html.erb:30:in `_app_views_candidates_show_html_erb__1631509814914522509_70285370445200'
+
+Started POST "/__better_errors/b6f586e18b7afc78/variables" for 127.0.0.1 at 2018-05-06 05:11:24 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:11:33 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 122ms (Views: 115.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:11:59 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 125ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:11:59 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 135ms (Views: 130.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:12:00 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 156ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:12:01 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 160ms (Views: 154.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:12:51 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 147ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:12:51 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 133ms (Views: 129.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:14:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:14:18 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 138ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:14:48 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 123ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:14:49 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (1.0ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 206ms (Views: 197.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:14:50 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 136ms (Views: 128.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:17:22 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 170ms (Views: 159.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:17:42 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 129ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:18:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:19:36 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 139ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:20:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:21:46 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 130ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:24:03 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 188ms (Views: 182.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:24:04 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 169ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:24:13 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.8ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 133ms (Views: 126.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:24:17 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 119ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:24:18 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 134ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:24:19 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 106ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:24:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:25:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:14 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 125ms (Views: 118.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:25 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 135ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:25 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:25 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 199ms (Views: 196.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 147ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:26 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:26 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 197ms (Views: 193.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:26 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 204ms (Views: 199.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:26 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 225ms (Views: 222.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 147ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:27 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 105ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:27 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 101ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:28 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 108ms (Views: 103.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:28 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:28 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 259ms (Views: 256.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 199ms (Views: 195.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:28 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 105ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:29 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 106ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:29 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 117ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:29 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 102ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:30 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 110ms (Views: 106.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:30 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 104ms (Views: 101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:31 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 108ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:31 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 116ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:31 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 105ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:27:31 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 115ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:27:52 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 113ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:28:05 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 111ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:28:06 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:29:56 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 146ms (Views: 136.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:32:22 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.6ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 145ms (Views: 137.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/voters/sign_in" for 127.0.0.1 at 2018-05-06 05:36:19 -0300
+Processing by Voters::SessionsController#new as HTML
+  Rendering voters/sessions/new.html.erb within layouts/application
+  Rendered voters/shared/_links.html.erb (2.7ms)
+  Rendered voters/sessions/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 287ms (Views: 235.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:36:26 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 142ms (Views: 134.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:36:27 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 125ms (Views: 121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:36:28 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 143ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:37:58 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 130ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:39:02 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 128ms (Views: 121.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:21 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 154ms (Views: 147.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:46 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 125ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:40:48 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 154ms (Views: 146.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:49 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 140ms (Views: 137.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:50 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 135ms (Views: 129.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:40:50 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 122ms (Views: 116.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:51 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 130ms (Views: 124.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:40:52 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 138ms (Views: 131.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:52 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 104ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:53 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:53 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 115ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:54 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 120ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:55 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 106ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:56 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 130ms (Views: 124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:56 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 112ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:57 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 130ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:57 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 117ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:40:58 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 129ms (Views: 123.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:40:58 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 116ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:40:59 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 122ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:41:00 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 120ms (Views: 115.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:41:00 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 125ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:41:01 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 135ms (Views: 130.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:41:02 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 120ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:41:03 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 125ms (Views: 118.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:41:20 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 130ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:41:23 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 106ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 05:41:36 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 102ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 05:55:14 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 323ms (Views: 308.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 05:56:24 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (1.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 182ms (Views: 172.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 05:56:26 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 144ms (Views: 134.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:57:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 05:58:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:01:43 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (655.7ms)
+Completed 500 Internal Server Error in 679ms (ActiveRecord: 0.4ms)
+
+
+
+NameError - undefined local variable or method `candidate' for #<#<Class:0x00007fd92d133cc0>:0x00007fd92eb48ac0>
+Did you mean?  @candidate:
+  app/views/candidates/show.html.erb:35:in `_app_views_candidates_show_html_erb__1631509814914522509_70285384108540'
+
+Started POST "/__better_errors/09b14efe82e0e23a/variables" for 127.0.0.1 at 2018-05-06 06:01:44 -0300
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:01:57 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 136ms (Views: 131.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:02:53 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 130ms (Views: 127.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:04:11 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 133ms (Views: 129.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:05:29 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 145ms (Views: 140.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:06:12 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 115ms (Views: 111.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:07:15 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 112ms (Views: 107.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:07:18 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 131ms (Views: 124.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/candidates/2" for 127.0.0.1 at 2018-05-06 06:07:22 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 118ms (Views: 113.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:08:49 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 159ms (Views: 147.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 06:08:50 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:08:52 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 135ms (Views: 129.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-05-06 06:08:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/template/sb-admin/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aldo Rebelo"], ["age", "62"], ["political", "Solidariedade"], ["job", "Secretaria do Governo"], ["password", "1234567890"], ["email", "aldorebelo@gmail.com"], ["img", "https://i.imgur.com/x9OPn6N.jpg"], ["created_at", "2018-05-06 09:14:23.298556"], ["updated_at", "2018-05-06 09:14:23.298556"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Álvaro Dias"], ["age", "73"], ["political", "Podemos"], ["job", "Senador do Parana"], ["password", "1234567890"], ["email", "alvarodias@gmail.com"], ["img", "https://i.imgur.com/YRJ1SFu.jpg"], ["created_at", "2018-05-06 09:14:23.304580"], ["updated_at", "2018-05-06 09:14:23.304580"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ciro Gomes"], ["age", "60"], ["political", "PDT"], ["job", "Vice-presidente do PDT"], ["password", "1234567890"], ["email", "cirogomes@gmail.com"], ["bio", "- Petróleo e gás: pretende fomentar a exploração dos materiais e usar para abastecer o mercado interno\n\n                        - Reduzir a dependência internacional na saúde, aumentando a produção de medicamentos, máquinas e próteses\n                        \n                        - Investir na formação de um complexo industrial do agronegócio para tornar o setor mais competitivo internacionalmente\n                        \n                        - Formação de complexo industrial da defesa para trazer mais independência ao setor no País\n                        \n                        - Redução da taxa de juros\n                        \n                        - Implantar tributação sobre lucros e dividendos\n                        \n                        - Ele critica a reforma da Previdência proposta por Temer, mas defende que haja mudança na área. Ele propõe mudança do regime de repartição (em que os contribuintes em atividade pagam os benefícios dos aposentados) para capitalização (trabalhadores poupam para a própria aposentadoria)"], ["img", "https://i.imgur.com/TmkVEN2.jpg"], ["created_at", "2018-05-06 09:14:23.309213"], ["updated_at", "2018-05-06 09:14:23.309213"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fernando Collor de Mello"], ["age", "68"], ["political", "PTC"], ["job", "Senador de Alagoas"], ["password", "1234567890"], ["email", "fernandinhocollor@gmail.com"], ["img", "https://i.imgur.com/Yfhxcu6.jpg"], ["created_at", "2018-05-06 09:14:23.313699"], ["updated_at", "2018-05-06 09:14:23.313699"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Geraldo Alckmin"], ["age", "65"], ["political", "PSDB"], ["job", "Presidência do PSDB"], ["password", "1234567890"], ["email", "geraldoalckmin@gmail.com"], ["bio", "- Criação de uma agência nacional de inteligência de combate ao narcotráfico e redução de homicídios no País\n\n                        - Conclusão da Transposição do Rio São Francisco\n                        \n                        - Concessão de serviços e estatais à iniciativa privada\n                        \n                        - Implantar um protocolo de fiscalização das empresas depois da venda\n                        \n                        - Reforçar investimentos na educação básica, infantil, fundamental e médio\n                        \n                        - O documento tucano ainda propõe mudança do presidencialismo para o parlamentarismo, ideia que também é defendida pelo pré-candidato"], ["img", "https://i.imgur.com/5G3sAvx.jpg"], ["created_at", "2018-05-06 09:14:23.317090"], ["updated_at", "2018-05-06 09:14:23.317090"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Guilherme Boulos"], ["age", "36"], ["political", "PSOL"], ["job", "Lider do MST"], ["password", "1234567890"], ["email", "guilhermeboulos@gmail.com"], ["img", "https://i.imgur.com/2ix0osI.jpg"], ["created_at", "2018-05-06 09:14:23.320927"], ["updated_at", "2018-05-06 09:14:23.320927"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Henrique Meirelles"], ["age", "72"], ["political", "MDB"], ["job", "Ministro da Fazenda"], ["password", "1234567890"], ["email", "henriquemeirelles@gmail.com"], ["img", "https://i.imgur.com/7VKz3fA.jpg"], ["created_at", "2018-05-06 09:14:23.325172"], ["updated_at", "2018-05-06 09:14:23.325172"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jair Bolsonaro"], ["age", "63"], ["political", "PSL"], ["job", "Deputado Federal do Rio de Janeiro"], ["password", "1234567890"], ["email", "jairbolsonarob@gmail.com"], ["bio", "- Manutenção do tripé macroeconômico: taxa de câmbio flutuante, metas fiscais e de inflação\n\n                            - Na educação, ele pretende colocar um general no Ministério da Educação (MEC) e utilizar metodologia semelhante à adotada em colégios militares\n                            \n                            - Na política internacional, ele pretende investir em tratados bilaterales, principalmente com os Estados Unidos\n                            \n                            - Ele defende ainda a revogação do estatuto do desarmamento e a implantação de sistema semelhante aonorte-americano, em que cada estado define sua legislação sobre o tema\n                            \n                            - Redução da maioridade penal\n                            \n                            - Pretende fazer auditoria para reduzir o número de pessoas atendidas pelo Bolsa Família\n                            \n                            - Ele aposta na maior exploração das ligas metálicas Nióbio e Grafeno. De acordo com o Serviço Geológico Brasileiro (CPRM), 98% das reservas conhecidas no mundo estão no Brasil\n                            \n                            - Deputado é contra a descriminalização do aborto e das drogas\n                            \n                            - Ele também já se mostrou contra a Reforma da Previdência como proposta por Temer"], ["img", "https://i.imgur.com/0Qu116J.jpg"], ["created_at", "2018-05-06 09:14:23.328323"], ["updated_at", "2018-05-06 09:14:23.328323"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joaquim Barbosa"], ["age", "63"], ["political", "PSB"], ["job", "Ex-presidente do Supremo Tribunal Federal"], ["password", "1234567890"], ["email", "joaquimbarbosa@gmail.com"], ["img", "https://i.imgur.com/AkjhiBa.jpg"], ["created_at", "2018-05-06 09:14:23.332300"], ["updated_at", "2018-05-06 09:14:23.332300"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lula"], ["age", "72"], ["political", "PT"], ["job", "Sem cargo politico atual"], ["password", "1234567890"], ["email", "lula@gmail.com"], ["bio", "- Referendo para consultar a população sobre reformas realizadas no governo Temer\n\n                        - Criação de um Fundo de Desenvolvimento e Emprego\n                        \n                        - Reajuste de 20% nos valores do Bolsa Família\n                        \n                        - Aumento real do salário mínimo e do seguro-desemprego\n                        \n                        - Correção da tabela do Imposto de Renda, com teto de isenção superior ao atual\n                        \n                        - Ampliação do crédito para estimular o consumo\n                        \n                        - Federalização do ensino médio"], ["img", "https://i.imgur.com/Wm9G27A.jpg"], ["created_at", "2018-05-06 09:14:23.336013"], ["updated_at", "2018-05-06 09:14:23.336013"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marina Silva"], ["age", "60"], ["political", "Rede"], ["job", "Lider do REDE"], ["password", "1234567890"], ["email", "marinasilva@gmail.com"], ["bio", "- Para a economia, ele defende controle da inflação, com câmbio flutuante, além de estímulo à concessão de crédito\n\n                        - Manter políticas sociais e tentar reduzir gastos públicos. Contudo, ela não especificou quais programas teriam continuidade, caso eleita\n                        \n                        - Atrelar o crescimento dos gastos públicos proporcionalmente ao crescimento do Produto Interno Bruto (PIB)\n                        \n                        - Defesa de políticas socioambientais e aumento de fiscalização sobre setores que provocam poluição. Ela também defende a implantação de programa de certificação das empresas\n                        \n                        - Ela já criticou políticas de privatizações adotadas por outros governos\n                        \n                        - Reforço nos investimentos para equipar a Polícia Federal\n                        \n                        - Marina também já afirmou que votaria a favor das propostas de reforma da Previdência e trabalhista, acrescentando pequenas mudanças, como o tempo mínimo de contribuição de 25 anos para se aposentar"], ["img", "https://i.imgur.com/ybj2gng.jpg"], ["created_at", "2018-05-06 09:14:23.339268"], ["updated_at", "2018-05-06 09:14:23.339268"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manuela D'Ávila"], ["age", "36"], ["political", "PCdoB"], ["job", "Deputada estadual do Rio Grande do Sul "], ["password", "1234567890"], ["email", "manueladavila@gmail.com"], ["img", "https://i.imgur.com/PfqgTHn.jpg"], ["created_at", "2018-05-06 09:14:23.342686"], ["updated_at", "2018-05-06 09:14:23.342686"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michel Temer"], ["age", "77"], ["political", "MDB"], ["job", "Presidente do Brasil"], ["password", "1234567890"], ["email", "micheltemer@gmail.com"], ["img", "https://i.imgur.com/J5W5uxd.jpg"], ["created_at", "2018-05-06 09:14:23.347194"], ["updated_at", "2018-05-06 09:14:23.347194"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paulo Rabello de Castro"], ["age", "69"], ["political", "PSC"], ["job", "Presidente do BNDES"], ["password", "1234567890"], ["email", "paulorabello@gmail.com"], ["img", "https://i.imgur.com/iACgLQ1.jpg"], ["created_at", "2018-05-06 09:14:23.350486"], ["updated_at", "2018-05-06 09:14:23.350486"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Maia"], ["age", "47"], ["political", "DEM"], ["job", "Presidente da Câmara dos deputados"], ["password", "1234567890"], ["email", "rodrigomaia@gmail.com"], ["img", "https://i.imgur.com/FZGOv7L.jpg"], ["created_at", "2018-05-06 09:14:23.353974"], ["updated_at", "2018-05-06 09:14:23.353974"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:14:38 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (1.1ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 736ms (Views: 715.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/candidates/3" for 127.0.0.1 at 2018-05-06 06:14:43 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 179ms (Views: 168.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:16:23 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.8ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 296ms (Views: 287.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:16:24 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 151ms (Views: 147.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:17:37 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 126ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:18:17 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 129ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:18:54 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 195ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:19:30 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 198ms (Views: 194.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:19:44 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 200ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:19:55 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 191ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:20:15 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 194ms (Views: 190.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:20:22 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 134ms (Views: 127.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:22:39 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (2.2ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 339ms (Views: 322.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:24:59 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (1.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 145ms (Views: 139.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:25:16 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 121ms (Views: 117.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:26:37 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 138ms (Views: 133.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:26:45 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 134ms (Views: 130.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:27:27 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 125ms (Views: 122.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:28:01 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 127ms (Views: 123.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:28:27 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 132ms (Views: 127.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/candidates/8" for 127.0.0.1 at 2018-05-06 06:29:05 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 142ms (Views: 132.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/candidates/1" for 127.0.0.1 at 2018-05-06 06:29:12 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 136ms (Views: 127.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates/2" for 127.0.0.1 at 2018-05-06 06:29:15 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 137ms (Views: 130.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates/3" for 127.0.0.1 at 2018-05-06 06:29:19 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 113ms (Views: 105.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/candidates/4" for 127.0.0.1 at 2018-05-06 06:29:21 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 113.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 06:30:45 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 124ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 06:30:49 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 233ms (Views: 230.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:30:53 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.5ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 164ms (Views: 153.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 06:30:54 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:30:56 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 109ms (Views: 102.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:33:19 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 147ms (Views: 142.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:33:24 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 127ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:33:28 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.9ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 153ms (Views: 144.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 06:33:31 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 101ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:33:35 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 125ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:33:52 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 123ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 06:33:57 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 109ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:33:59 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 132ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:34:00 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 123ms (Views: 118.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:34:01 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 129ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intencao" for 127.0.0.1 at 2018-05-06 06:34:02 -0300
+Processing by Site::HomeController#intencao as HTML
+  Rendering site/home/intencao.html.erb within layouts/application
+  Rendered site/home/intencao.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:34:02 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 126ms (Views: 120.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:34:06 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 122ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:34:16 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 121ms (Views: 114.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:34:17 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (0.4ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 141ms (Views: 135.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/candidates/8" for 127.0.0.1 at 2018-05-06 06:34:57 -0300
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 145ms (Views: 137.8ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aldo Rebelo"], ["age", "62"], ["political", "Solidariedade"], ["job", "Secretaria do Governo"], ["password", "1234567890"], ["email", "aldorebelo@gmail.com"], ["img", "https://i.imgur.com/x9OPn6N.jpg"], ["created_at", "2018-05-06 09:36:29.733466"], ["updated_at", "2018-05-06 09:36:29.733466"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Álvaro Dias"], ["age", "73"], ["political", "Podemos"], ["job", "Senador do Parana"], ["password", "1234567890"], ["email", "alvarodias@gmail.com"], ["img", "https://i.imgur.com/YRJ1SFu.jpg"], ["created_at", "2018-05-06 09:36:29.739825"], ["updated_at", "2018-05-06 09:36:29.739825"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ciro Gomes"], ["age", "60"], ["political", "PDT"], ["job", "Vice-presidente do PDT"], ["password", "1234567890"], ["email", "cirogomes@gmail.com"], ["bio", "- Petróleo e gás: pretende fomentar a exploração dos materiais e usar para abastecer o mercado interno\n\n                        - Reduzir a dependência internacional na saúde, aumentando a produção de medicamentos, máquinas e próteses\n                        \n                        - Investir na formação de um complexo industrial do agronegócio para tornar o setor mais competitivo internacionalmente\n                        \n                        - Formação de complexo industrial da defesa para trazer mais independência ao setor no País\n                        \n                        - Redução da taxa de juros\n                        \n                        - Implantar tributação sobre lucros e dividendos\n                        \n                        - Ele critica a reforma da Previdência proposta por Temer, mas defende que haja mudança na área. Ele propõe mudança do regime de repartição (em que os contribuintes em atividade pagam os benefícios dos aposentados) para capitalização (trabalhadores poupam para a própria aposentadoria)"], ["img", "https://i.imgur.com/TmkVEN2.jpg"], ["created_at", "2018-05-06 09:36:29.743563"], ["updated_at", "2018-05-06 09:36:29.743563"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fernando Collor de Mello"], ["age", "68"], ["political", "PTC"], ["job", "Senador de Alagoas"], ["password", "1234567890"], ["email", "fernandinhocollor@gmail.com"], ["img", "https://i.imgur.com/Yfhxcu6.jpg"], ["created_at", "2018-05-06 09:36:29.748732"], ["updated_at", "2018-05-06 09:36:29.748732"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Geraldo Alckmin"], ["age", "65"], ["political", "PSDB"], ["job", "Presidência do PSDB"], ["password", "1234567890"], ["email", "geraldoalckmin@gmail.com"], ["bio", "- Criação de uma agência nacional de inteligência de combate ao narcotráfico e redução de homicídios no País\n\n                        - Conclusão da Transposição do Rio São Francisco\n                        \n                        - Concessão de serviços e estatais à iniciativa privada\n                        \n                        - Implantar um protocolo de fiscalização das empresas depois da venda\n                        \n                        - Reforçar investimentos na educação básica, infantil, fundamental e médio\n                        \n                        - O documento tucano ainda propõe mudança do presidencialismo para o parlamentarismo, ideia que também é defendida pelo pré-candidato"], ["img", "https://i.imgur.com/5G3sAvx.jpg"], ["created_at", "2018-05-06 09:36:29.752748"], ["updated_at", "2018-05-06 09:36:29.752748"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Guilherme Boulos"], ["age", "36"], ["political", "PSOL"], ["job", "Lider do MST"], ["password", "1234567890"], ["email", "guilhermeboulos@gmail.com"], ["img", "https://i.imgur.com/2ix0osI.jpg"], ["created_at", "2018-05-06 09:36:29.756542"], ["updated_at", "2018-05-06 09:36:29.756542"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Henrique Meirelles"], ["age", "72"], ["political", "MDB"], ["job", "Ministro da Fazenda"], ["password", "1234567890"], ["email", "henriquemeirelles@gmail.com"], ["img", "https://i.imgur.com/7VKz3fA.jpg"], ["created_at", "2018-05-06 09:36:29.759990"], ["updated_at", "2018-05-06 09:36:29.759990"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jair Bolsonaro"], ["age", "63"], ["political", "PSL"], ["job", "Deputado Federal do Rio de Janeiro"], ["password", "1234567890"], ["email", "jairbolsonarob@gmail.com"], ["bio", "- Manutenção do tripé macroeconômico: taxa de câmbio flutuante, metas fiscais e de inflação\n\n                            - Na educação, ele pretende colocar um general no Ministério da Educação (MEC) e utilizar metodologia semelhante à adotada em colégios militares\n                            \n                            - Na política internacional, ele pretende investir em tratados bilaterales, principalmente com os Estados Unidos\n                            \n                            - Ele defende ainda a revogação do estatuto do desarmamento e a implantação de sistema semelhante aonorte-americano, em que cada estado define sua legislação sobre o tema\n                            \n                            - Redução da maioridade penal\n                            \n                            - Pretende fazer auditoria para reduzir o número de pessoas atendidas pelo Bolsa Família\n                            \n                            - Ele aposta na maior exploração das ligas metálicas Nióbio e Grafeno. De acordo com o Serviço Geológico Brasileiro (CPRM), 98% das reservas conhecidas no mundo estão no Brasil\n                            \n                            - Deputado é contra a descriminalização do aborto e das drogas\n                            \n                            - Ele também já se mostrou contra a Reforma da Previdência como proposta por Temer"], ["img", "https://i.imgur.com/0Qu116J.jpg"], ["created_at", "2018-05-06 09:36:29.763189"], ["updated_at", "2018-05-06 09:36:29.763189"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joaquim Barbosa"], ["age", "63"], ["political", "PSB"], ["job", "Ex-presidente do Supremo Tribunal Federal"], ["password", "1234567890"], ["email", "joaquimbarbosa@gmail.com"], ["img", "https://i.imgur.com/AkjhiBa.jpg"], ["created_at", "2018-05-06 09:36:29.767264"], ["updated_at", "2018-05-06 09:36:29.767264"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lula"], ["age", "72"], ["political", "PT"], ["job", "Sem cargo politico atual"], ["password", "1234567890"], ["email", "lula@gmail.com"], ["bio", "- Referendo para consultar a população sobre reformas realizadas no governo Temer\n\n                        - Criação de um Fundo de Desenvolvimento e Emprego\n                        \n                        - Reajuste de 20% nos valores do Bolsa Família\n                        \n                        - Aumento real do salário mínimo e do seguro-desemprego\n                        \n                        - Correção da tabela do Imposto de Renda, com teto de isenção superior ao atual\n                        \n                        - Ampliação do crédito para estimular o consumo\n                        \n                        - Federalização do ensino médio"], ["img", "https://i.imgur.com/Wm9G27A.jpg"], ["created_at", "2018-05-06 09:36:29.770996"], ["updated_at", "2018-05-06 09:36:29.770996"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marina Silva"], ["age", "60"], ["political", "Rede"], ["job", "Lider do REDE"], ["password", "1234567890"], ["email", "marinasilva@gmail.com"], ["bio", "- Para a economia, ele defende controle da inflação, com câmbio flutuante, além de estímulo à concessão de crédito\n\n                        - Manter políticas sociais e tentar reduzir gastos públicos. Contudo, ela não especificou quais programas teriam continuidade, caso eleita\n                        \n                        - Atrelar o crescimento dos gastos públicos proporcionalmente ao crescimento do Produto Interno Bruto (PIB)\n                        \n                        - Defesa de políticas socioambientais e aumento de fiscalização sobre setores que provocam poluição. Ela também defende a implantação de programa de certificação das empresas\n                        \n                        - Ela já criticou políticas de privatizações adotadas por outros governos\n                        \n                        - Reforço nos investimentos para equipar a Polícia Federal\n                        \n                        - Marina também já afirmou que votaria a favor das propostas de reforma da Previdência e trabalhista, acrescentando pequenas mudanças, como o tempo mínimo de contribuição de 25 anos para se aposentar"], ["img", "https://i.imgur.com/ybj2gng.jpg"], ["created_at", "2018-05-06 09:36:29.774346"], ["updated_at", "2018-05-06 09:36:29.774346"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manuela D'Ávila"], ["age", "36"], ["political", "PCdoB"], ["job", "Deputada estadual do Rio Grande do Sul "], ["password", "1234567890"], ["email", "manueladavila@gmail.com"], ["img", "https://i.imgur.com/PfqgTHn.jpg"], ["created_at", "2018-05-06 09:36:29.777767"], ["updated_at", "2018-05-06 09:36:29.777767"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michel Temer"], ["age", "77"], ["political", "MDB"], ["job", "Presidente do Brasil"], ["password", "1234567890"], ["email", "micheltemer@gmail.com"], ["img", "https://i.imgur.com/J5W5uxd.jpg"], ["created_at", "2018-05-06 09:36:29.782203"], ["updated_at", "2018-05-06 09:36:29.782203"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paulo Rabello de Castro"], ["age", "69"], ["political", "PSC"], ["job", "Presidente do BNDES"], ["password", "1234567890"], ["email", "paulorabello@gmail.com"], ["img", "https://i.imgur.com/iACgLQ1.jpg"], ["created_at", "2018-05-06 09:36:29.785613"], ["updated_at", "2018-05-06 09:36:29.785613"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Maia"], ["age", "47"], ["political", "DEM"], ["job", "Presidente da Câmara dos deputados"], ["password", "1234567890"], ["email", "rodrigomaia@gmail.com"], ["img", "https://i.imgur.com/FZGOv7L.jpg"], ["created_at", "2018-05-06 09:36:29.788986"], ["updated_at", "2018-05-06 09:36:29.788986"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/candidates/8" for 127.0.0.1 at 2018-05-06 06:36:49 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCandidate Load (0.6ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 864ms (Views: 806.7ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mCandidate Load (0.9ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" ORDER BY "candidates"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aldo Rebelo"], ["age", "62"], ["political", "Solidariedade"], ["job", "Secretaria do Governo"], ["password", "1234567890"], ["email", "aldorebelo@gmail.com"], ["img", "https://i.imgur.com/x9OPn6N.jpg"], ["created_at", "2018-05-06 09:40:23.117544"], ["updated_at", "2018-05-06 09:40:23.117544"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Álvaro Dias"], ["age", "73"], ["political", "Podemos"], ["job", "Senador do Parana"], ["password", "1234567890"], ["email", "alvarodias@gmail.com"], ["img", "https://i.imgur.com/YRJ1SFu.jpg"], ["created_at", "2018-05-06 09:40:23.124922"], ["updated_at", "2018-05-06 09:40:23.124922"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ciro Gomes"], ["age", "60"], ["political", "PDT"], ["job", "Vice-presidente do PDT"], ["password", "1234567890"], ["email", "cirogomes@gmail.com"], ["bio", "- Petróleo e gás: pretende fomentar a exploração dos materiais e usar para abastecer o mercado interno\n\n                        - Reduzir a dependência internacional na saúde, aumentando a produção de medicamentos, máquinas e próteses\n                        \n                        - Investir na formação de um complexo industrial do agronegócio para tornar o setor mais competitivo internacionalmente\n                        \n                        - Formação de complexo industrial da defesa para trazer mais independência ao setor no País\n                        \n                        - Redução da taxa de juros\n                        \n                        - Implantar tributação sobre lucros e dividendos\n                        \n                        - Ele critica a reforma da Previdência proposta por Temer, mas defende que haja mudança na área. Ele propõe mudança do regime de repartição (em que os contribuintes em atividade pagam os benefícios dos aposentados) para capitalização (trabalhadores poupam para a própria aposentadoria)"], ["img", "https://i.imgur.com/TmkVEN2.jpg"], ["created_at", "2018-05-06 09:40:23.130010"], ["updated_at", "2018-05-06 09:40:23.130010"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fernando Collor de Mello"], ["age", "68"], ["political", "PTC"], ["job", "Senador de Alagoas"], ["password", "1234567890"], ["email", "fernandinhocollor@gmail.com"], ["img", "https://i.imgur.com/Yfhxcu6.jpg"], ["created_at", "2018-05-06 09:40:23.134266"], ["updated_at", "2018-05-06 09:40:23.134266"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Geraldo Alckmin"], ["age", "65"], ["political", "PSDB"], ["job", "Presidência do PSDB"], ["password", "1234567890"], ["email", "geraldoalckmin@gmail.com"], ["bio", "- Criação de uma agência nacional de inteligência de combate ao narcotráfico e redução de homicídios no País\n\n                        - Conclusão da Transposição do Rio São Francisco\n                        \n                        - Concessão de serviços e estatais à iniciativa privada\n                        \n                        - Implantar um protocolo de fiscalização das empresas depois da venda\n                        \n                        - Reforçar investimentos na educação básica, infantil, fundamental e médio\n                        \n                        - O documento tucano ainda propõe mudança do presidencialismo para o parlamentarismo, ideia que também é defendida pelo pré-candidato"], ["img", "https://i.imgur.com/5G3sAvx.jpg"], ["created_at", "2018-05-06 09:40:23.137687"], ["updated_at", "2018-05-06 09:40:23.137687"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Guilherme Boulos"], ["age", "36"], ["political", "PSOL"], ["job", "Lider do MST"], ["password", "1234567890"], ["email", "guilhermeboulos@gmail.com"], ["img", "https://i.imgur.com/2ix0osI.jpg"], ["created_at", "2018-05-06 09:40:23.142147"], ["updated_at", "2018-05-06 09:40:23.142147"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Henrique Meirelles"], ["age", "72"], ["political", "MDB"], ["job", "Ministro da Fazenda"], ["password", "1234567890"], ["email", "henriquemeirelles@gmail.com"], ["img", "https://i.imgur.com/7VKz3fA.jpg"], ["created_at", "2018-05-06 09:40:23.145786"], ["updated_at", "2018-05-06 09:40:23.145786"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jair Bolsonaro"], ["age", "63"], ["political", "PSL"], ["job", "Deputado Federal do Rio de Janeiro"], ["password", "1234567890"], ["email", "jairbolsonarob@gmail.com"], ["bio", "- Manutenção do tripé macroeconômico: taxa de câmbio flutuante, metas fiscais e de inflação\n\n                            - Na educação, ele pretende colocar um general no Ministério da Educação (MEC) e utilizar metodologia semelhante à adotada em colégios militares\n                            \n                            - Na política internacional, ele pretende investir em tratados bilaterales, principalmente com os Estados Unidos\n                            \n                            - Ele defende ainda a revogação do estatuto do desarmamento e a implantação de sistema semelhante aonorte-americano, em que cada estado define sua legislação sobre o tema\n                            \n                            - Redução da maioridade penal\n                            \n                            - Pretende fazer auditoria para reduzir o número de pessoas atendidas pelo Bolsa Família\n                            \n                            - Ele aposta na maior exploração das ligas metálicas Nióbio e Grafeno. De acordo com o Serviço Geológico Brasileiro (CPRM), 98% das reservas conhecidas no mundo estão no Brasil\n                            \n                            - Deputado é contra a descriminalização do aborto e das drogas\n                            \n                            - Ele também já se mostrou contra a Reforma da Previdência como proposta por Temer"], ["img", "https://i.imgur.com/0Qu116J.jpg"], ["created_at", "2018-05-06 09:40:23.149393"], ["updated_at", "2018-05-06 09:40:23.149393"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joaquim Barbosa"], ["age", "63"], ["political", "PSB"], ["job", "Ex-presidente do Supremo Tribunal Federal"], ["password", "1234567890"], ["email", "joaquimbarbosa@gmail.com"], ["img", "https://i.imgur.com/AkjhiBa.jpg"], ["created_at", "2018-05-06 09:40:23.152585"], ["updated_at", "2018-05-06 09:40:23.152585"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lula"], ["age", "72"], ["political", "PT"], ["job", "Sem cargo politico atual"], ["password", "1234567890"], ["email", "lula@gmail.com"], ["bio", "- Referendo para consultar a população sobre reformas realizadas no governo Temer\n\n                        - Criação de um Fundo de Desenvolvimento e Emprego\n                        \n                        - Reajuste de 20% nos valores do Bolsa Família\n                        \n                        - Aumento real do salário mínimo e do seguro-desemprego\n                        \n                        - Correção da tabela do Imposto de Renda, com teto de isenção superior ao atual\n                        \n                        - Ampliação do crédito para estimular o consumo\n                        \n                        - Federalização do ensino médio"], ["img", "https://i.imgur.com/Wm9G27A.jpg"], ["created_at", "2018-05-06 09:40:23.156775"], ["updated_at", "2018-05-06 09:40:23.156775"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "bio", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marina Silva"], ["age", "60"], ["political", "Rede"], ["job", "Lider do REDE"], ["password", "1234567890"], ["email", "marinasilva@gmail.com"], ["bio", "- Para a economia, ele defende controle da inflação, com câmbio flutuante, além de estímulo à concessão de crédito\n\n                        - Manter políticas sociais e tentar reduzir gastos públicos. Contudo, ela não especificou quais programas teriam continuidade, caso eleita\n                        \n                        - Atrelar o crescimento dos gastos públicos proporcionalmente ao crescimento do Produto Interno Bruto (PIB)\n                        \n                        - Defesa de políticas socioambientais e aumento de fiscalização sobre setores que provocam poluição. Ela também defende a implantação de programa de certificação das empresas\n                        \n                        - Ela já criticou políticas de privatizações adotadas por outros governos\n                        \n                        - Reforço nos investimentos para equipar a Polícia Federal\n                        \n                        - Marina também já afirmou que votaria a favor das propostas de reforma da Previdência e trabalhista, acrescentando pequenas mudanças, como o tempo mínimo de contribuição de 25 anos para se aposentar"], ["img", "https://i.imgur.com/ybj2gng.jpg"], ["created_at", "2018-05-06 09:40:23.159979"], ["updated_at", "2018-05-06 09:40:23.159979"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manuela D'Ávila"], ["age", "36"], ["political", "PCdoB"], ["job", "Deputada estadual do Rio Grande do Sul "], ["password", "1234567890"], ["email", "manueladavila@gmail.com"], ["img", "https://i.imgur.com/PfqgTHn.jpg"], ["created_at", "2018-05-06 09:40:23.163754"], ["updated_at", "2018-05-06 09:40:23.163754"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michel Temer"], ["age", "77"], ["political", "MDB"], ["job", "Presidente do Brasil"], ["password", "1234567890"], ["email", "micheltemer@gmail.com"], ["img", "https://i.imgur.com/J5W5uxd.jpg"], ["created_at", "2018-05-06 09:40:23.168218"], ["updated_at", "2018-05-06 09:40:23.168218"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paulo Rabello de Castro"], ["age", "69"], ["political", "PSC"], ["job", "Presidente do BNDES"], ["password", "1234567890"], ["email", "paulorabello@gmail.com"], ["img", "https://i.imgur.com/iACgLQ1.jpg"], ["created_at", "2018-05-06 09:40:23.171548"], ["updated_at", "2018-05-06 09:40:23.171548"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "candidates" ("name", "age", "political", "job", "password", "email", "img", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Maia"], ["age", "47"], ["political", "DEM"], ["job", "Presidente da Câmara dos deputados"], ["password", "1234567890"], ["email", "rodrigomaia@gmail.com"], ["img", "https://i.imgur.com/FZGOv7L.jpg"], ["created_at", "2018-05-06 09:40:23.175113"], ["updated_at", "2018-05-06 09:40:23.175113"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/candidates/8" for 127.0.0.1 at 2018-05-06 06:40:37 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCandidate Load (0.7ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 732ms (Views: 681.6ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mCandidate Load (0.9ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Started GET "/candidates/8" for 127.0.0.1 at 2018-05-06 06:45:16 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCandidate Load (1.0ms)[0m  [1m[34mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering candidates/show.html.erb within layouts/application
+  Rendered candidates/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 625ms (Views: 573.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-06 06:45:18 -0300
+Processing by Site::HomeController#index as HTML
+  Rendering site/home/index.html.erb within layouts/application
+  [1m[36mCandidate Load (2.1ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
+  Rendered site/home/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 169ms (Views: 162.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/quiz" for 127.0.0.1 at 2018-05-06 06:45:19 -0300
+Processing by Site::HomeController#quiz as HTML
+  Rendering site/home/quiz.html.erb within layouts/application
+  Rendered site/home/quiz.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 139ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:45:22 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 127ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/compatibilidade" for 127.0.0.1 at 2018-05-06 06:48:06 -0300
+Processing by Site::HomeController#compatibilidade as HTML
+  Rendering site/home/compatibilidade.html.erb within layouts/application
+  Rendered site/home/compatibilidade.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 409ms (Views: 391.6ms | ActiveRecord: 0.0ms)
+
+

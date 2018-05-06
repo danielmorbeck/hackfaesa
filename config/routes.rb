@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get 'quiz', to: 'site/home#quiz'
   get 'compatibilidade', to: 'site/home#compatibilidade'
+  get 'intencao', to: 'site/home#intencao'
       
     # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

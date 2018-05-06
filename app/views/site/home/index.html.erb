@@ -26,16 +26,17 @@
               <br>
               <span class="text-muted" id='atualcargo'><%= candidate.job %></span>
               </h3>
+
               <% pull_left = false %>
   
           </div>
         <% else %>
           <div class="featurette" id="about">
             <img class="featurette-image img-circle img-responsive pull-right" src="<%= candidate.img %>">
-            <h2 class="featurette-heading"><%= link_to candidate.name, candidate %></h2><br>
-            <h3 ><span class="text-muted"id='partido'><%= candidate.political %></span>
+            <h2 class="featurette-heading" style='padding-left: 35%;'><%= link_to candidate.name, candidate %></h2><br>
+            <h3 ><span class="text-muted"id='partido' style='padding-left: 35%;'><%= candidate.political %></span>
               <br>
-              <span class="text-muted" id='atualcargo'><%= candidate.job %></span>
+              <span class="text-muted" id='atualcargo' style='padding-left: 35%;'><%= candidate.job %></span>
             </h3>
             <% pull_left = true %>
           </div>

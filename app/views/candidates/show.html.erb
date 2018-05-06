@@ -1,34 +1,21 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @candidate.name %>
-</p>
-
-<p>
-  <strong>Age:</strong>
-  <%= @candidate.age %>
-</p>
-
-<p>
-  <strong>Political:</strong>
-  <%= @candidate.political %>
-</p>
-
-<p>
-  <strong>Job:</strong>
-  <%= @candidate.job %>
-</p>
-
-<p>
-  <strong>Bio:</strong>
-  <%= @candidate.bio %>
-</p>
-
-<p>
-  <strong>Votes:</strong>
-  <%= @candidate.vote %>
-</p>
-
-<%= link_to 'Edit', edit_candidate_path(@candidate) %> |
-<%= link_to 'Back', candidates_path %>
+<div class="panel panel-yellow">
+    <div class="panel-heading">
+      <h1><%= @candidate.name %></h1>
+    </div>
+    <div class="panel-body">
+    <div class="featurette" id="about">
+      <img class="featurette-image img-circle img-responsive pull-left" src="<%= @candidate.img %>">
+      <h3><span class="text-muted"id='partido'>Partido: <%= @candidate.political %></span>
+      <br>
+      <span class="text-muted" id='atualcargo'>Cargo: <%= @candidate.job %></span>
+      <br>
+      <span class="text-muted" id='atualcargo'>Idade: <%= @candidate.age %></span>
+      </h3>
+    </div>
+    </div>
+    <div class="panel-footer">
+      <p>
+        Bio: <%= @candidate.bio %>
+      </p>
+    </div>
+</div>
