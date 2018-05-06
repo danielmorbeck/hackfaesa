@@ -3025,6 +3025,7 @@ Processing by Site::HomeController#index as HTML
   Rendering site/home/index.html.erb within layouts/application
   [1m[36mCandidate Load (0.3ms)[0m  [1m[34mSELECT "candidates".* FROM "candidates"[0m
   Rendered site/home/index.html.erb within layouts/application (3.0ms)
+<<<<<<< HEAD
 Completed 200 OK in 128ms (Views: 121.2ms | ActiveRecord: 0.3ms)
 
 
@@ -3067,3 +3068,8 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+=======
+Completed 200 OK in 105ms (Views: 101.8ms | ActiveRecord: 0.3ms)
+
+
+>>>>>>> d621da2f424014922601438ca09ad90d9592a0fa
