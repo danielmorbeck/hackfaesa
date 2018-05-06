@@ -1,0 +1,40 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <div class="login-panel panel panel-default">
+            <% if @voter.errors.any? %>
+            <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+
+            <ul>
+                <% @voter.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul>
+            </div>
+            <% end %>
+            <div class="panel-heading">
+                <h3 class="panel-title">Registre sua conta</h3>
+            </div>
+            <div class="panel-body">
+                <%= form_for([:site, @voter]) do |f| %>
+                      <div class="form-group">
+                        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder:"E-mail" %>
+                      </div>
+                      <div class="form-group">
+                      <%= f.text_field :cpf, autocomplete: "cpf", class: "form-control", placeholder:"CPF" %>
+                      </div>
+                      <div class="form-group">
+                        <%= f.password_field :password, autocomplete: "off", class:"form-control", placeholder:"Senha"%>
+                      </div>
+                      <div class="form-group">
+                        <%= f.password_field :password_confirmation, autocomplete: "off", class:"form-control", placeholder:"Confirmacao senha"%>
+                      </div>
+                      <%= f.submit "Entrar", class:"btn btn-lg btn-success btn-block" %>
+                <% end %>    
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+

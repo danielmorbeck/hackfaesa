@@ -1,0 +1,59 @@
+
+
+<!-- Full Width Image Header -->
+<header class="header-image">
+    <div class="headline">
+        <div class="container">
+            <h1>One Page Wonder</h1>
+            <h2>Will Knock Your Socks Off</h2>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <hr class="featurette-divider">
+    <% pull_left = true %>
+    <!-- First Featurette -->
+    <% @candidates.each do |candidate| %>
+      
+      <% if pull_left %>
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading"><%= link_to candidate.name, candidate %>
+                <span class="text-muted"><%= candidate.job %></span>
+            </h2>
+            <p class="lead"><%= candidate.bio %></p>
+            <% pull_left = false %>
+
+        </div>
+      <% else %>
+        <div class="featurette" id="about">
+          <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+          <h2 class="featurette-heading"><%= link_to candidate.name, candidate %>
+            <span class="text-muted"><%= candidate.job %></span>
+          </h2>
+          <p class="lead"><%= candidate.bio %></p>
+        </div>
+      <% end %>
+      
+    <% end %>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Meu Candidato 2018</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!-- /.container -->
+
+
+
+
