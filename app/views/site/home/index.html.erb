@@ -4,7 +4,7 @@
 <header class="header-image" >
     <div class="headline">
         <div class="container">
-            <h1>Meu Candidato</h1>
+            <h1>Meu Candidatos</h1>
             <h2></h2>
         </div>
     </div>
@@ -21,17 +21,20 @@
       <% if pull_left %>
         <div class="featurette" id="about">
             <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading"><%= link_to candidate.name, candidate %>
+            <h2 class="featurette-heading"><%= link_to candidate.name, candidate %><br>
+                <span class="text-muted"><%= candidate.political %></span>
+                <span class="text-muted">-</span><br>
                 <span class="text-muted"><%= candidate.job %></span>
             </h2>
-            <p class="lead"><%= candidate.bio %></p>
             <% pull_left = false %>
 
         </div>
       <% else %>
         <div class="featurette" id="about">
           <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-          <h2 class="featurette-heading"><%= link_to candidate.name, candidate %>
+          <h2 class="featurette-heading"><%= link_to candidate.name, candidate %><br>
+            <span class="text-muted"><%= candidate.political %></span>
+            <span class="text-muted">-</span><br>
             <span class="text-muted"><%= candidate.job %></span>
           </h2>
           <p class="lead"><%= candidate.bio %></p>
